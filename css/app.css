@@ -1,0 +1,204 @@
+* {
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+}
+
+/*Better Helvetica fallback based on: https://css-tricks.com/snippets/css/better-helvetica/*/
+
+body {
+  background-color: LightCyan;
+  color: rgb(0, 0, 0);
+  font-family: 'Poppins', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 400;
+  line-height: 1.45;
+  color: Black;
+  margin: auto;
+}
+
+/*Modular Scale for Type based on Pro Web Type: https://prowebtype.com/choosing-headings/*/
+
+@media only screen and (min-width: 42em) {
+  h1 {
+    font-size: 4.25em;
+  }
+  h2 {
+    font-size: 4em;
+  }
+  h3 {
+    font-size: 3.125em;
+  }
+  h4 {
+    font-size: 2em;
+  }
+  h5 {
+    font-size: 1.563em;
+  }
+  h6 {
+    font-size: 1em;
+  }
+  p {
+    font-size: 1em;
+  }
+}
+
+#hero {
+  text-align: center;
+  /* Built with Heydon Pickering's SVG https://mutable.gallery/board/*/
+  background-image: url("data:image/svg+xml;charset=UTF-8, %3csvg xmlns='http://www.w3.org/2000/svg' class='artwork' viewBox='0 0 700 700' width='1400' height='1400'%3e%3crect x='0' y='0' width='700' height='700' fill='%23ffffff' /%3e%3cg transform='translate(70 70) scale(0.8)' stroke-linecap='round' stroke-linejoin='round' stroke-width='1' stroke='%23039749'%3e%3cpolyline points='525,490 525,70'%3e%3c/polyline%3e%3cpolyline points='140,490 525,490'%3e%3c/polyline%3e%3cpolyline points='140,484.1725 140,495.8275'%3e%3c/polyline%3e%3ccircle cx='525' cy='490' r='3.8850000000000002' fill='%23039749'%3e%3c/circle%3e%3ccircle cx='525' cy='70' r='4.662000000000001' fill='%23039749'%3e%3c/circle%3e%3cpolyline points='455,315 455,525'%3e%3c/polyline%3e%3cpolyline points='665,315 455,315'%3e%3c/polyline%3e%3cpolyline points='665,309.1725 665,320.8275'%3e%3c/polyline%3e%3ccircle cx='455' cy='315' r='3.8850000000000002' fill='%23039749'%3e%3c/circle%3e%3ccircle cx='455' cy='525' r='4.662000000000001' fill='%23039749'%3e%3c/circle%3e%3cpolyline points='630,175 630,455'%3e%3c/polyline%3e%3cpolyline points='455,175 630,175'%3e%3c/polyline%3e%3cpolyline points='455,169.1725 455,180.8275'%3e%3c/polyline%3e%3ccircle cx='630' cy='175' r='4.662000000000001' fill='%23039749'%3e%3c/circle%3e%3ccircle cx='630' cy='455' r='5.827500000000001' fill='%23039749'%3e%3c/circle%3e%3cpolyline points='140,420 140,665'%3e%3c/polyline%3e%3cpolyline points='665,420 140,420'%3e%3c/polyline%3e%3cpolyline points='665,414.1725 665,425.8275'%3e%3c/polyline%3e%3ccircle cx='140' cy='420' r='4.662000000000001' fill='%23039749'%3e%3c/circle%3e%3ccircle cx='140' cy='665' r='4.662000000000001' fill='%23039749'%3e%3c/circle%3e%3cpolyline points='420,525 420,525'%3e%3c/polyline%3e%3cpolyline points='490,525 420,525'%3e%3c/polyline%3e%3cpolyline points='490,519.1725 490,530.8275'%3e%3c/polyline%3e%3ccircle cx='420' cy='525' r='3.8850000000000002' fill='%23039749'%3e%3c/circle%3e%3ccircle cx='420' cy='525' r='4.662000000000001' fill='%23039749'%3e%3c/circle%3e%3cpolyline points='280,525 280,280'%3e%3c/polyline%3e%3cpolyline points='560,525 280,525'%3e%3c/polyline%3e%3cpolyline points='560,519.1725 560,530.8275'%3e%3c/polyline%3e%3ccircle cx='280' cy='525' r='4.662000000000001' fill='%23039749'%3e%3c/circle%3e%3ccircle cx='280' cy='280' r='4.662000000000001' fill='%23039749'%3e%3c/circle%3e%3cpolyline points='70,490 70,630'%3e%3c/polyline%3e%3cpolyline points='315,490 70,490'%3e%3c/polyline%3e%3cpolyline points='315,484.1725 315,495.8275'%3e%3c/polyline%3e%3ccircle cx='70' cy='490' r='3.8850000000000002' fill='%23039749'%3e%3c/circle%3e%3ccircle cx='70' cy='630' r='4.662000000000001' fill='%23039749'%3e%3c/circle%3e%3cpolyline points='175,280 175,490'%3e%3c/polyline%3e%3cpolyline points='420,280 175,280'%3e%3c/polyline%3e%3cpolyline points='420,274.1725 420,285.8275'%3e%3c/polyline%3e%3ccircle cx='175' cy='280' r='4.662000000000001' fill='%23039749'%3e%3c/circle%3e%3ccircle cx='175' cy='490' r='5.827500000000001' fill='%23039749'%3e%3c/circle%3e%3cpolyline points='210,490 210,665'%3e%3c/polyline%3e%3cpolyline points='245,490 210,490'%3e%3c/polyline%3e%3cpolyline points='245,484.1725 245,495.8275'%3e%3c/polyline%3e%3ccircle cx='210' cy='490' r='3.8850000000000002' fill='%23039749'%3e%3c/circle%3e%3ccircle cx='210' cy='665' r='3.8850000000000002' fill='%23039749'%3e%3c/circle%3e%3cpolyline points='175,525 175,35'%3e%3c/polyline%3e%3cpolyline points='315,525 175,525'%3e%3c/polyline%3e%3cpolyline points='315,519.1725 315,530.8275'%3e%3c/polyline%3e%3ccircle cx='175' cy='525' r='4.662000000000001' fill='%23039749'%3e%3c/circle%3e%3ccircle cx='175' cy='35' r='4.662000000000001' fill='%23039749'%3e%3c/circle%3e%3cpolyline points='595,385 595,70'%3e%3c/polyline%3e%3cpolyline points='665,385 595,385'%3e%3c/polyline%3e%3cpolyline points='665,379.1725 665,390.8275'%3e%3c/polyline%3e%3ccircle cx='595' cy='385' r='3.8850000000000002' fill='%23039749'%3e%3c/circle%3e%3ccircle cx='595' cy='70' r='3.8850000000000002' fill='%23039749'%3e%3c/circle%3e%3cpolyline points='560,385 560,455'%3e%3c/polyline%3e%3cpolyline points='175,385 560,385'%3e%3c/polyline%3e%3cpolyline points='175,379.1725 175,390.8275'%3e%3c/polyline%3e%3ccircle cx='560' cy='385' r='4.662000000000001' fill='%23039749'%3e%3c/circle%3e%3ccircle cx='560' cy='455' r='5.827500000000001' fill='%23039749'%3e%3c/circle%3e%3cpolyline points='490,280 490,560'%3e%3c/polyline%3e%3cpolyline points='525,280 490,280'%3e%3c/polyline%3e%3cpolyline points='525,274.1725 525,285.8275'%3e%3c/polyline%3e%3ccircle cx='490' cy='280' r='5.827500000000001' fill='%23039749'%3e%3c/circle%3e%3ccircle cx='490' cy='560' r='4.662000000000001' fill='%23039749'%3e%3c/circle%3e%3c/g%3e%3c/svg%3e ");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 0;
+  padding: 40px;
+  align-items: center;
+}
+
+/* Other Background for Potential Use
+background-image: url("data:image/svg+xml;charset=UTF-8, %3csvg xmlns='http://www.w3.org/2000/svg' class='artwork' viewBox='0 0 700 700' width='1400' height='1400'%3e%3cdefs%3e%3cpattern id='circles' patternUnits='userSpaceOnUse' width='4' height='4'%3e%3ccircle fill='%2301a949' cx='1' cy='1' r='0.5'%3e%3c/circle%3e%3c/pattern%3e%3c/defs%3e%3crect x='0' y='0' width='700' height='700' fill='%23ffffff' /%3e%3cg transform='translate(35 35) scale(0.9)' stroke-linecap='round' stroke-linejoin='round' stroke-width='1' stroke='%2301a949'%3e%3ccircle cx='671' cy='430' r='14.5' fill='none' stroke-width='2' %3e%3c/circle%3e%3ccircle cx='671' cy='430' r='3' fill='none' %3e%3c/circle%3e%3ccircle cx='76' cy='253' r='38' fill='none' stroke-width='1' %3e%3c/circle%3e%3ccircle cx='76' cy='253' r='33' fill='none' %3e%3c/circle%3e%3ccircle cx='85' cy='503' r='42.5' fill='none' stroke-width='2' %3e%3c/circle%3e%3ccircle cx='85' cy='503' r='35' fill='none' %3e%3c/circle%3e%3ccircle cx='122' cy='198' r='61' fill='none' stroke-width='1' %3e%3c/circle%3e%3ccircle cx='122' cy='198' r='29' fill='%2301a949' %3e%3c/circle%3e%3ccircle cx='660' cy='669' r='15.5' fill='none' stroke-width='2' %3e%3c/circle%3e%3ccircle cx='660' cy='669' r='5' fill='%2301a949' %3e%3c/circle%3e%3ccircle cx='680' cy='514' r='10' fill='none' stroke-width='1' %3e%3c/circle%3e%3ccircle cx='680' cy='514' r='5' fill='%2301a949' %3e%3c/circle%3e%3ccircle cx='233' cy='123' r='61.5' fill='none' stroke-width='2' %3e%3c/circle%3e%3ccircle cx='233' cy='123' r='41' fill='none' %3e%3c/circle%3e%3ccircle cx='91' cy='559' r='45.5' fill='none' stroke-width='1' %3e%3c/circle%3e%3ccircle cx='91' cy='559' r='4' fill='none' %3e%3c/circle%3e%3ccircle cx='60' cy='13' r='6.5' fill='none' stroke-width='1' %3e%3c/circle%3e%3ccircle cx='60' cy='13' r='6' fill='none' %3e%3c/circle%3e%3cpolyline fill='url(%23circles)' points='671,430 76,253 85,503 122,198 660,669 680,514 233,123 91,559 60,13'%3e%3c/polyline%3e%3c/g%3e%3c/svg%3e ");
+*/
+
+#hero span {
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  margin: 0;
+  color: PaleGreen;
+  background: Black;
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.4);
+}
+
+#hero h5 {
+  text-transform: uppercase;
+  background-color: Black;
+  padding: 10px;
+  color: PaleGreen;
+  display: inline-block;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.4);
+}
+
+.menu {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  list-style-type: none;
+  background: Black;
+  margin: 0;
+  padding: 1em;
+  color: White;
+  font: 700 1em sans-serif;
+  box-shadow: 0 40px 20px -16px rgba(0, 0, 0, 0.4);
+}
+
+.menu a {
+  text-decoration: none;
+  font-size: 1.5em;
+  color: white;
+  justify-content: space-between;
+  margin: 10px 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: .2em;
+}
+
+nav a:hover {
+  color: PaleGreen;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.left {
+  flex: 50%;
+  background-color: LightCyan;
+  padding: 20px;
+}
+
+.right {
+  flex: 50%;
+  background-color: White;
+  padding: 20px;
+}
+
+@media screen and (max-width: 500px) {
+  .row {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.responsive-image {
+  max-width: 100%;
+}
+
+.square img {
+  display: block;
+}
+
+@media screen and (min-width: 600px) {
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    background-color: LightCyan
+  }
+  .square {
+    width: 50%;
+    margin: 1rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .square {
+    width: calc(100% / 5);
+  }
+}
+
+.section-headings h2 {
+  background-color: lightpink;
+  text-align: center;
+  font-size: 4em;
+  font-weight: bold;
+  color: Black;
+  padding-top: 0;
+}
+
+footer {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  background: Black;
+  margin: 0;
+  padding: 1em;
+  color: White;
+  font: 700 1em sans-serif;
+}
+
+i {
+  color: #ffffff;
+  padding: 5px;
+}
+
+/**.btn-grad {background-image: linear-gradient(to right, #16A085 0%, #F4D03F 51%, #16A085 100%)}
+.btn-grad:hover { background-position: right center; }**/
+{"mode":"full","isActive":false}
