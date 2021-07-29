@@ -181,6 +181,14 @@ nav a:hover {
   padding-top: 0;
 }
 
+form {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  color: Black;
+  padding-top: 0;
+}
+
 footer {
   display: flex;
   flex: 1;
