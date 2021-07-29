@@ -61,6 +61,11 @@ body {
   align-items: center;
 }
 
+svg:hover {
+  transform: scale(1.25);
+  transition-duration: 1.5s;
+}
+
 /* Other Background for Potential Use
 background-image: url("data:image/svg+xml;charset=UTF-8, %3csvg xmlns='http://www.w3.org/2000/svg' class='artwork' viewBox='0 0 700 700' width='1400' height='1400'%3e%3cdefs%3e%3cpattern id='circles' patternUnits='userSpaceOnUse' width='4' height='4'%3e%3ccircle fill='%2301a949' cx='1' cy='1' r='0.5'%3e%3c/circle%3e%3c/pattern%3e%3c/defs%3e%3crect x='0' y='0' width='700' height='700' fill='%23ffffff' /%3e%3cg transform='translate(35 35) scale(0.9)' stroke-linecap='round' stroke-linejoin='round' stroke-width='1' stroke='%2301a949'%3e%3ccircle cx='671' cy='430' r='14.5' fill='none' stroke-width='2' %3e%3c/circle%3e%3ccircle cx='671' cy='430' r='3' fill='none' %3e%3c/circle%3e%3ccircle cx='76' cy='253' r='38' fill='none' stroke-width='1' %3e%3c/circle%3e%3ccircle cx='76' cy='253' r='33' fill='none' %3e%3c/circle%3e%3ccircle cx='85' cy='503' r='42.5' fill='none' stroke-width='2' %3e%3c/circle%3e%3ccircle cx='85' cy='503' r='35' fill='none' %3e%3c/circle%3e%3ccircle cx='122' cy='198' r='61' fill='none' stroke-width='1' %3e%3c/circle%3e%3ccircle cx='122' cy='198' r='29' fill='%2301a949' %3e%3c/circle%3e%3ccircle cx='660' cy='669' r='15.5' fill='none' stroke-width='2' %3e%3c/circle%3e%3ccircle cx='660' cy='669' r='5' fill='%2301a949' %3e%3c/circle%3e%3ccircle cx='680' cy='514' r='10' fill='none' stroke-width='1' %3e%3c/circle%3e%3ccircle cx='680' cy='514' r='5' fill='%2301a949' %3e%3c/circle%3e%3ccircle cx='233' cy='123' r='61.5' fill='none' stroke-width='2' %3e%3c/circle%3e%3ccircle cx='233' cy='123' r='41' fill='none' %3e%3c/circle%3e%3ccircle cx='91' cy='559' r='45.5' fill='none' stroke-width='1' %3e%3c/circle%3e%3ccircle cx='91' cy='559' r='4' fill='none' %3e%3c/circle%3e%3ccircle cx='60' cy='13' r='6.5' fill='none' stroke-width='1' %3e%3c/circle%3e%3ccircle cx='60' cy='13' r='6' fill='none' %3e%3c/circle%3e%3cpolyline fill='url(%23circles)' points='671,430 76,253 85,503 122,198 660,669 680,514 233,123 91,559 60,13'%3e%3c/polyline%3e%3c/g%3e%3c/svg%3e ");
 */
