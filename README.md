@@ -3,7 +3,7 @@
  
  The features I implemented: 
  
- 1. A JS component that calcualtes days until your birthday
+ 1. A JS component that calcualtes days until your birthday (Once you choose the date click outside of the calendar to run the calculator) 
  2. CSS animation of the center logo
  3. The use of flexbox
 
