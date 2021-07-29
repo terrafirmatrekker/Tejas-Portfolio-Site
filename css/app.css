@@ -190,8 +190,7 @@ form {
   text-align: center;
   font-size: 2em;
   font-weight: bold;
-  color: Black;
-  padding-top: 0;
+  
 }
 
 footer {
@@ -202,7 +201,7 @@ footer {
   list-style-type: none;
   background: Black;
   margin: 0;
-  padding: 1em;
+  /* padding: 1em; */
   color: White;
   font: 700 1em sans-serif;
 }

@@ -6,7 +6,7 @@
   
   function calculateDays() {
     let today = new Date();
-    let bday = new Date(document.getElementById("bday").value); 
+    let bday = new Date(document.getElementById("birthday").value); 
     let age = today.getFullYear() - bday.getFullYear();
     
     let upcomingBday = new Date(today.getFullYear(), bday.getMonth(), bday.getDate());
